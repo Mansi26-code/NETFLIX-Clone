@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Libre+Baskerville:ital@1&family=Mukta:wght@600&family=Playfair:wght@800&family=Poppins:wght@200&family=Roboto:wght@300;400&display=swap);
+
+* {
+  padding: 0;
+  margin: 0;
+  /* color: white; */
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+main {
+  /* border: 2px solid red; */
+  width: 100vw;
+}
+.navbar {
+  /* border: 2px solid red; */
+  background-color: rgb(4, 113, 237);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.para{
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+}
+.nav-box {
+  /* border: 2px solid red; */
+  height: inherit;
+  /* width: 100px; */
+  display: flex;
+  align-items: center;
+}
+.skip-box {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 70%;
+  background-color: white;
+}
+
+#hero-section {
+  /* border: 2px solid red; */
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#hero-section::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  z-index: -1;
+}
+
+.hero-box {
+  /* border: 2px solid green; */
+  width: 30%;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+.hero-box h1 {
+  font-size: 30px;
+}
+
+#section2 {
+  /* border: 2px solid red; */
+  /* height: 500px; */
+  padding: 30px 0px;
+  background-color: rgb(232, 232, 232);
+}
+.section2-header {
+  /* border: 2px solid rgb(32, 6, 198); */
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+.section2-header h1 {
+  font-size: 40px;
+}
+.section2-content {
+  /* border: 2px solid green; */
+  height: 90%;
+  box-sizing: border-box;
+  display: flex;
+}
+.content-box {
+  /* border: 2px solid red; */
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.content-item {
+  /* border: 2px solid blue; */
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: white;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  transition: background 0.5s ease-in-out, color 0.4s;
+}
+.content-item:hover {
+  background: linear-gradient(to right, rgb(1, 94, 255), rgb(93, 158, 255));
+  /* opacity: 0.4; */
+  color: white;
+}
+
+.item-icon {
+  /* border: 2px solid red; */
+  width: 80px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: rgb(1, 88, 249);
+  transition: background-color 0.3s ease-in-out;
+}
+.content-item:hover .item-icon {
+  background-color: white;
+}
+.image-box {
+  /* border: 2px solid red; */
+  height: 100%;
+}
+.image-box img {
+  height: 100%;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+#section3 {
+  /* border: 2px solid red; */
+  /* height: 700px; */
+  position: relative;
+  padding: 0px 0px 80px 0px;
+}
+#section3::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://rajevault.rajasthan.gov.in/citizen/counter-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.section3-header {
+  /* border: 2px solid red; */
+
+  text-align: center;
+  /* position: relative; */
+  padding: 70px;
+}
+.section3-header h1 {
+  font-size: 50px;
+  opacity: 0.8;
+}
+.section3-header h1 > span {
+  color: white;
+}
+
+.section3-content {
+  /* border: 2px solid red; */
+  /* position: relative; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+.section3-content-card {
+  /* border: 2px solid green; */
+  /* height: 300px; */
+  width: 180px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  transition: background 0.5s ease-in-out, color 0.4s,
+    transform 0.2s ease-in-out;
+}
+
+.section3-content-card:hover {
+  background: linear-gradient(to bottom, rgb(1, 94, 255), rgb(47, 70, 245));
+  color: white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-image {
+  /* border: 2px solid red; */
+  height: 150px;
+}
+.card-content {
+  padding: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+  .section2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .item-box {
+    align-items: center;
+  }
+  .image-box {
+    display: flex;
+    justify-content: center;
+  }
+  .image-box img {
+    width: 60%;
+  }
+}
